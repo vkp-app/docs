@@ -1,1 +1,6 @@
-site_name: My Docs
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: VKP Virtual Kubernetes Platform
+theme:
+  name: material
+repo_name: vkp-app/vkp
+repo_url: https://github.com/vkp-app/vkp
