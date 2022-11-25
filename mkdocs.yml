@@ -4,3 +4,5 @@ theme:
   name: material
 repo_name: vkp-app/vkp
 repo_url: https://github.com/vkp-app/vkp
+markdown_extensions:
+  - admonition
