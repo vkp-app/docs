@@ -19,7 +19,7 @@ For example, you may include a corporate certificate as well as the certificate 
 !!! warning
     The CA bundle you create MUST contain the CA that the VKP Ingress TLS certificates are signed with.
 
-Mount the Secret/ConfigMap to the Operator:
+Mount the Secret/ConfigMap to the Operator by editing the [`Subscription`](/operator-guide/installation/operator/#creating-the-subscription):
 
 ```yaml
 spec:
