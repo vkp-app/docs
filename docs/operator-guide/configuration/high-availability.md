@@ -9,6 +9,9 @@ VCluster requires running an external datastore, which is managed by the VKP.
 
 As users create Clusters, the VKP will add users/databases to the PostgreSQL Cluster and automatically configure the Cluster to use PostgreSQL as its backing datastore.
 
+Since HA requires an Operator to configure a database, it is not enabled by default.
+However, enabling it is highly recommended.
+
 ## Creating the database
 
 ### Install the CrunchyData PostgreSQL Operator
@@ -63,7 +66,7 @@ spec:
 
 ## Configuring the VKP
 
-Add the following to your [`Subscription`](/operator-guide/installation/operator/#creating-the-subscription):
+Add the following to your [`Subscription`](/operator-guide/installation/2-operator/#creating-the-subscription):
 
 ```yaml
 spec:
@@ -77,7 +80,7 @@ spec:
         value: vkp-system
 ```
 
-Add the following to your [`values.yaml`](/operator-guide/installation/control-plane/#values):
+Add the following to your [`values.yaml`](/operator-guide/installation/3-control-plane/#values):
 
 ```yaml
 web:

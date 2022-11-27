@@ -33,7 +33,7 @@ spec:
 
 ## Creating the Subscription
 
-On OpenShift, you can install the Operator via the OperatorHub.
+> On OpenShift (or if you're using the OpenShift Console), you can install the Operator via the guided installation provided by the OperatorHub.
 
 !!! note
     If you have not installed ClusterAPI, the Operator will go into CrashLoopBackOff after a few minutes.
@@ -53,4 +53,10 @@ spec:
   source: vkp-catalog
   sourceNamespace: olm
   startingCSV: operator.v0.1.1
+  config:
+    env:
+      - name: PAAS_IS_OPENSHIFT # (1)!
+        value: "true"
 ```
+
+1. This only need to be set if you're using OpenShift.
