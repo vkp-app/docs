@@ -4,6 +4,9 @@ theme:
   name: material
   features:
     - content.code.annotate
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tracking
 repo_name: vkp-app/vkp
 repo_url: https://github.com/vkp-app/vkp
 markdown_extensions:
