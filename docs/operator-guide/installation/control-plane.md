@@ -33,7 +33,7 @@ For the full list, have a look at the [`values.yaml`](https://github.com/vkp-app
 
 ```shell
 git clone https://github.com/vkp-app/vkp.git
-helm install vkp ./vkp/deploy/chart/vkp -f values.yaml
+helm install vkp oci://ghcr.io/vkp-app/vkp/helm-charts -f values.yaml
 ```
 
 ## Kustomize
@@ -47,7 +47,7 @@ helmCharts:
   - name: vkp
     releaseName: vkp
     namespace: vkp-system
-    version: 0.1.1
+    version: 0.3.0
     valuesFile: values.yaml
 ```
 
