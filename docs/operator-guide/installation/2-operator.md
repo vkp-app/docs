@@ -57,6 +57,11 @@ spec:
     env:
       - name: PAAS_IS_OPENSHIFT # (1)!
         value: "true"
+      - name: CLUSTER_ROOT_CA_ISSUER_NAME # (2)!
+        value: vkp-identity
+      - name: CLUSTER_ROOT_CA_ISSUER_KIND # (2)!
+        value: ClusterIssuer
 ```
 
 1. This only need to be set if you're using OpenShift.
+2. These resources are created and managed by the Control Plane Helm chart.

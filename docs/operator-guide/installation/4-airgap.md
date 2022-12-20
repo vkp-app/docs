@@ -23,6 +23,8 @@ crane pull ghcr.io/vkp-app/vkp/operator:$VKP_VERSION operator.tgz
 crane pull ghcr.io/vkp-app/vkp/index:$VKP_VERSION index.tgz
 crane pull ghcr.io/vkp-app/vkp/bundle:$VKP_VERSION bundle.tgz
 crane pull ghcr.io/vkp-app/vkp/apiserver:$VKP_VERSION apiserver.tgz
+crane pull ghcr.io/vkp-app/vkp/metrics-proxy:$VKP_VERSION metrics-proxy.tgz
+crane pull ghcr.io/vkp-app/vkp/dex:$VKP_VERSION dex.tgz
 crane pull ghcr.io/vkp-app/vkp/web:$VKP_VERSION web.tgz
 crane pull ghcr.io/vkp-app/vkp/vcluster-plugin-sync:$VKP_VERSION vcluster-plugin-sync.tgz
 crane pull ghcr.io/vkp-app/vkp/vcluster-plugin-hooks:$VKP_VERSION vcluster-plugin-hooks.tgz
@@ -31,6 +33,7 @@ crane pull ghcr.io/vkp-app/vkp/helm-charts/vkp:$VKP_VERSION chart.tgz
 crane pull ghcr.io/vkp-app/addons/dashboard-k8s:1.1.0 addon-dashboard-k8s.tgz
 crane pull ghcr.io/vkp-app/addons/dashboard-okd:1.1.0 addon-dashboard-okd.tgz
 crane pull ghcr.io/vkp-app/addons/podinfo:1.0.0 addon-podinfo.tgz
+crane pull ghcr.io/vkp-app/addons/prometheus-adapter:1.3.6 addon-prometheus-adapter.tgz
 ```
 
 1. You will need to pull multiple K3S images, depending on the number of Kubernetes versions you choose to support.
