@@ -4,8 +4,9 @@
     Ensure you have installed the Operator first as it provides the APIs used by the Control Plane.
 
 Prerequisites:
-* ClusterAPI
-* Operator
+
+* [ClusterAPI](../1-cluster-api)
+* [Operator](../2-operator)
 * Cert Manager
 
 ## Values

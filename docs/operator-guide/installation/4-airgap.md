@@ -78,18 +78,8 @@ spec:
 Set the following in your `values.yaml`:
 
 ```yaml
-api:
-  image:
-    registry: registry.example.internal/ghcr.io
-web:
-  image:
-    registry: registry.example.internal/ghcr.io
-oauthProxy:
-  image:
-    registry: registry.example.internal/quay.io
-dex:
-  image:
-    registry: registry.example.internal/ghcr.io
+global:
+  imageRegistry: registry.example.internal/ghcr.io
 ```
 
 ## Other changes

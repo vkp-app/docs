@@ -130,4 +130,4 @@ EOF
 
 ## Installing the addon
 
-Follow the instructions on the [installing addons guide](/addon-guide/installing-addons/).
+Follow the instructions on the [installing addons guide](../installing-addons/).
